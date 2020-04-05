@@ -2,15 +2,11 @@ import random
 import difflib
 import nltk
 import aiml
-
-nltk.data.path.append("/media/root/a9a409ac-aad4-4a06-b8b7-57e7e410b952/nltk_data")
+import library
+# nltk.data.path.append("/media/root/a9a409ac-aad4-4a06-b8b7-57e7e410b952/nltk_data")
 
 user ={}
 
-library = [{"id":0,"name":"math","dept":"cse","code":"mth01","floor":2,"total":10,"available":5,"issueable":True},
-						{"id":1,"name":"rice","dept":"agriculture","code":"agr103","floor":1,"total":80,"available":6,"issueable":True},
-						{"id":2,"name":"os","dept":"cse","code":"cse316","floor":5,"total":20,"available":4,"issueable":True},
-						{"id":3,"name":"mth102","dept":"cse","code":"mth316","floor":5,"total":20,"available":4,"issueable":True}]
 book_names = [x['name'].lower() for x in library]
 dept_names = [x['dept'].lower() for x in library]
 book_codes = [x['code'].lower() for x in library]
