@@ -1,0 +1,58 @@
+{% load static %}
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AIBot</title>
+    <link rel="icon" type="image/jpeg" href="{% static 'nitesh.jpg' %} ">
+    <link rel="stylesheet" href="{% static 'css/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'chat.css' %}">
+    <script type="text/javascript" src="{% static 'js/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/js/bootstrap.min.js' %}"></script>
+</head>
+
+<body>
+    <div id="chat-body" class="panel panel-default">
+        <div class="panel-heading">
+            <img class="chat-img" src="/static/nitesh.jpg" style="width: 40px;height: 40px;border-radius: 50%;box-shadow: 0 0 5px black;margin-right: 15px;margin-top: -20px;">
+            <div style="display: inline-block;position: relative;">
+                <strong style="display: block;font-size: 17px;">AIbot</strong>
+                <span style="font-size: 10px;color: #545454;">
+                    <span id="panel-name-1">Nitesh Kumar</span>
+                    <span style="display: none;" id="panel-name-2">Aditya</span>
+                    <span style="display: none;" id="panel-name-3">Abhishek</span>
+                    <span style="display: none;" id="panel-name-4">Kasuni</span>
+                </span>
+            </div>
+            <div style="float: right;text-align: right;">
+                <div style="font-weight: bold;" id="panel-time"></div>
+                <span style="font-size: 10px;color: #545454;" id="panel-date"></span>
+            </div>
+        </div>
+        <div id="msg-list-div" class="panel-body">
+            <ul id="msg-list" style="list-style: none;" class="list-group">
+                
+                <script>
+                    var chatlist = document.getElementById('msg-list-div');
+                    chatlist.scrollTop = chatlist.scrollHeight;
+                </script>
+            </ul>
+        </div>
+        <form id="chat-form" method="post" action="/post/">
+        <div id="chat-bottom" class="input-group">
+            <input type="text" id="chat-msg" name="chat-msg" class="form-control"/>
+            <span class="input-group-btn">
+                <input class="btn btn-danger" id="send" type="submit" value="Send"/>
+            </span>
+        </div>
+        </form>
+    </div>
+
+
+</body>
+
+<script src="{% static 'chat.js' %}"></script>
+</html>
