@@ -6,7 +6,7 @@
 <template>
 
 <!-- Load standard AIML set -->
-<learn>/media/root/a9a409ac-aad4-4a06-b8b7-57e7e410b952/aibot/bot/standard/*.aiml</learn>
+<learn>standard/*.aiml</learn>
 </template>
 </category>
 
