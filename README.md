@@ -7,6 +7,10 @@ Chatbot for Library Management
   4. Can count books
   5. Miscellaneous Chat
 
+### Architecture
+
+![alt text](https://github.com/nitteshdangi/AIbot/blob/main/architecture.png?raw=true)
+
 ### AIbot is handled via 2 files others are for django server
 1. File 1 : /AIbot/bot/view.py
 2. File 2 : /AIbot/bot/chat.py
