@@ -9,7 +9,7 @@ Chatbot for Library Management
 
 ### Architecture
 
-![architecture](https://github.com/nitteshdangi/AIbot/blob/master/architecture.png?raw=true)
+![architecture](https://github.com/niteshdangi/AIbot/blob/master/architecture.png?raw=true)
 
 ### AIbot is handled via 2 files others are for django server
 1. File 1 : /AIbot/bot/view.py
